@@ -1,13 +1,15 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  plugins: [react()],
   server: {
-    host: '0.0.0.0', // 监听所有 IP
-    port: 8080,      // 固定端口为 8080
-    strictPort: true, // 如果端口被占用，直接退出而不尝试下一个可用端口
+    host: '0.0.0.0',
+    port: 8080,
+    strictPort: true,
   },
   preview: {
-    host: '0.0.0.0', // 部署预览时也监听所有 IP
+    host: '0.0.0.0',
     port: 8080,
     strictPort: true,
   }
