@@ -12,7 +12,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^8.0.3"
+    "@tailwindcss/postcss": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "terser": "^5.46.1",
+    "vite": "^8.0.3",
+    "vite-plugin-compression": "^0.5.1"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^6.0.1",
